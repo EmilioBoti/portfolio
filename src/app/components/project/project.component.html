@@ -2,7 +2,9 @@
     <h1 class="title">My Projects</h1>
     <div class="project-container">
         <div class="project" *ngFor = "let elem of projects">
-            <img src="{{elem.url}}" alt="">
+            <a href="{{elem.web}}">
+                <img src="{{elem.url}}" alt="">
+            </a>
             <div class="detail">
                 <h3 class="creation">Created with</h3>
                 <ul class="skills">

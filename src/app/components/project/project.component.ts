@@ -14,8 +14,8 @@ export class ProjectComponent {
     
     constructor(){
         this.projects = [
-            new Project("assets/img/tictactoe.PNG", ["HTML","CSS", "Javacript"]),
-            new Project("assets/img/school-system.PNG", ["HTML","CSS", "Javacript", "Php", "MySQL"])
+            new Project("assets/img/tictactoe.PNG", ["HTML","CSS", "Javacript"],"https://emilioboti.github.io/TresEnRayas/" ),
+            new Project("assets/img/school-system.PNG", ["HTML","CSS", "Javacript", "Php", "MySQL"], "http://system-school.epizy.com/")
         ]
     }
 }
