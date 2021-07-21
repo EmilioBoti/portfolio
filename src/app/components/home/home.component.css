@@ -1,0 +1,137 @@
+.main-home-container{
+        animation: slide-main 300ms ease-in-out;
+    }
+    @keyframes slide-main{
+        0%{
+            transform: translateX(-100%)
+        };
+        100%{
+            transform: translateX(0%)
+        }
+    }
+.title-container{
+    width: 70%;
+    padding: 1em;
+    margin: 0em auto;
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    margin-bottom: 10em;
+}
+.title{
+    font-size: 5em;
+}
+.tools{
+    margin: 0em auto;
+    margin-top: 2em;
+    width: 50%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    justify-items: center;
+    align-items: baseline;
+}
+.tool{
+    position: relative;
+    /* animation: jump ease-in-out 1s; */
+}
+
+.tool::before,
+.tool::after{
+    --scale: 0;
+    width: max-content;
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    transform: translateX(-50%) translateY(120%) scale(var(--scale));
+    content: attr(data-tooltip);
+    border: 0.01em solid;
+    padding: 0.3em;
+    text-align: center;
+    border-radius: 0.2em;
+    color: #000000;
+    background-color: #fff;
+    transition: 200ms ease-in;
+    transform-origin: top center;
+
+}
+.tool:hover::before,
+.tool:hover::after{
+    --scale: 1
+}
+/*Icons*/
+.tools i{
+    font-size: 2em;
+}
+.tools i, svg:hover{
+    cursor: pointer;
+}
+.tools :nth-child(1){
+    animation: jump 500ms ease-in-out;
+}
+.tools :nth-child(2){
+    color: #CB0303;
+    animation: jump 600ms ease-in-out;
+}
+.tools :nth-child(3){
+    animation: jump 700ms ease-in-out;
+}
+.tools :nth-child(4){
+    color: #160487;
+    /* animation: slide 1000ms ease-in-out; */
+}
+.tools :nth-child(5){
+    color: #CB0303;
+    animation: jump 800ms ease-in-out;
+}
+.tools :nth-child(6){
+    color: #EF3054;
+    animation: jump 900ms ease-in-out;
+}
+.tools :nth-child(7){
+    color: #AB9B06;
+    animation: jump 1000ms ease-in-out;
+}
+.name{
+    color: #05c793;
+}
+.about{
+    font-size: 1.8em;
+    text-align: justify;
+    line-height: 1.2em;
+}
+.btn-project{
+    margin-top: 1.5em;
+    padding: 0.5em;
+    background-color: #05c793;
+    border: 0em;
+    border-radius: 0.3em;
+}
+.btn-project:hover{
+    cursor: pointer;
+    background-color: #06946e;
+    color: #fff;
+}
+
+@keyframes jump {
+    0%{
+        transform: translateY(-1.3em)
+    };
+    100%{
+        transform: translateY(0em)
+    }
+}
+@media (max-width: 414px) {
+    .title-container{
+        width: 100%;
+    }
+    .about{
+        font-size: 1.1em;
+    }
+    .title{
+        font-size: 2em;
+    }
+    .tools{
+        width: 85%;
+    }
+    
+}

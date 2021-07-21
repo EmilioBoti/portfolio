@@ -1,0 +1,20 @@
+<div class="main-project-container">
+    <h1 class="title">My Projects</h1>
+    <div class="project-container">
+        <div class="project" *ngFor = "let elem of projects">
+            <img src="{{elem.url}}" alt="">
+            <div class="detail">
+                <h3 class="creation">Created with</h3>
+                <ul class="skills">
+                    <li class="item-skill" *ngFor = "let e of elem.langs">{{e}}</li>
+                    <!-- <li class="item-skill">CSS</li>
+                    <li class="item-skill">JavaScript</li> -->
+                </ul>
+                <div class="about-box">
+                    <h3 class="about-it">About Project</h3>
+                    <p class="about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusamus ab illum, sapiente ex, accusantium sunt earum culpa ad distinctio autem officia doloremque animi non reprehenderit ipsum rem itaque officiis dolorum? Harum id quod ea sint laborum provident iusto mollitia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

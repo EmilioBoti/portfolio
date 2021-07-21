@@ -1,0 +1,58 @@
+.main-project-container{
+    outline: 0.0em solid;
+    animation: slide-project 300ms ease-in-out;
+}
+@keyframes slide-project {
+    0%{
+        transform: translateX(100%)
+    };
+    100%{
+        transform: translateX(0%)
+    }
+}
+.project-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0em auto;
+    padding: 1em;
+    width: 95%;
+    outline: 0.0em solid;
+}
+.title{
+    width: max-content;
+    position: relative;
+    top: 0.5em;
+    left: 1.5em;
+    font-size: 5em;
+    color: #05c793;
+    margin-bottom: 3em;
+}
+.project{
+    /* width: 100%; */
+    margin: 0em auto;
+    display: flex;
+    margin-bottom: 2em;
+}
+.project img{
+    width: 40%;
+    border-radius: 0.3em;
+    margin-bottom: 10em;
+}
+.detail{
+    margin-left: 4em;
+}
+.creation, .about-it{
+    font-size: 3em;
+    color: #05c793;
+}
+.skills{
+    display: flex;
+    list-style: none;
+    margin-bottom: 3em;
+}
+.item-skill{
+    margin-right: 1em;
+}
+.about-box{
+    width: 80%;
+}

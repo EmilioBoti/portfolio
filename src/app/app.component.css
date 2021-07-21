@@ -1,0 +1,56 @@
+header{
+    width: 85%;
+    margin: auto;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: transparent;
+}
+.nav{
+    margin-right: 1.5em;
+}
+.link{
+    margin-left: 1.5em;
+    text-decoration: none;
+    color: #fff;
+}
+.link:hover{
+    color: #05C793;
+}
+.medias a{
+    color: #fff;
+}
+.medias i{
+    font-size: 1.5em;
+    margin-right: 0.5em;
+}
+.medias i:hover{
+    color: #05C793;
+    cursor: pointer;
+}
+main{
+    padding: 1em;
+    width: 99%;
+    margin: 0em auto;
+    outline: 0.0em solid;
+}
+.active-link{
+    color: #05C793;
+}
+@media (max-width: 414px) {
+    header{
+        width: 99%;
+        margin: auto;
+        padding: 2em;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        align-items: baseline;
+        background-color: transparent;
+    }
+    .nav{
+        margin-right: 0em;
+    }   
+}
